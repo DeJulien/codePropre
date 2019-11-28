@@ -1,15 +1,20 @@
 package ex3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author DIGINAMIC
  */
 public class Zoo {
 
 	private String nom;
-	private SavaneAfricaine savaneAfricaine;
-	private ZoneCarnivore zoneCarnivore;
-	private FermeReptile fermeReptile;
-	private Aquarium aquarium;
+	private SavaneAfricaine savaneAfricaine = new SavaneAfricaine();
+	private ZoneCarnivore zoneCarnivore= new ZoneCarnivore();
+	private FermeReptile fermeReptile = new FermeReptile();
+	private Aquarium aquarium = new Aquarium();
+	
+	private List<Zone> zone= new ArrayList<>();
 	
 	public Zoo(String nom){
 		this.nom = nom;
